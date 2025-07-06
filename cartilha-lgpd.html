@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartilha Digital - LGPD</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #00509e;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #00509e;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-left: 5px solid #00509e;
+      padding-left: 0.75rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    img.illustration {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 1.5rem 1rem;
+      border-top: 1px solid #ddd;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+    button#topBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #00509e;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      display: none;
+      z-index: 1000;
+    }
+    button#topBtn:hover {
+      background-color: #003f6b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cartilha Digital - Lei Geral de Proteção de Dados (LGPD)</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>O que é a LGPD?</h2>
+      <img class="illustration" src="https://cdn.jsdelivr.net/gh/undraw/undraw_secure_data_re_e8jy.svg" alt="Proteção de dados" />
+      <p>A LGPD é a legislação brasileira que regula o uso, armazenamento e tratamento dos dados pessoais, garantindo direitos aos cidadãos e impondo responsabilidades às organizações.</p>
+    </section>
+
+    <section>
+      <h2>Quais dados a LGPD protege?</h2>
+      <img class="illustration" src="https://cdn.jsdelivr.net/gh/undraw/undraw_data_trust_b0wy.svg" alt="Dados protegidos" />
+      <p>Ela protege informações como nome, endereço, CPF, dados bancários, localização e qualquer outro dado que identifique uma pessoa.</p>
+    </section>
+
+    <section>
+      <h2>Direitos do cidadão</h2>
+      <img class="illustration" src="https://cdn.jsdelivr.net/gh/undraw/undraw_privacy_protection_re_ajxq.svg" alt="Direitos do cidadão" />
+      <p>O cidadão pode acessar, corrigir e excluir seus dados, além de saber como eles estão sendo utilizados.</p>
+    </section>
+
+    <section>
+      <h2>Como proteger seus dados?</h2>
+      <img class="illustration" src="https://cdn.jsdelivr.net/gh/undraw/undraw_cyber_security_re_6y2v.svg" alt="Proteção de dados" />
+      <p>Adote boas práticas digitais, como usar senhas fortes, não compartilhar dados pessoais em sites inseguros e ficar atento a golpes virtuais.</p>
+    </section>
+
+    <section>
+      <h2>Penalidades e fiscalização</h2>
+      <img class="illustration" src="https://cdn.jsdelivr.net/gh/undraw/undraw_security_on_re_e491.svg" alt="Fiscalização LGPD" />
+      <p>Empresas que descumprirem a LGPD podem receber multas severas e sanções administrativas.</p>
+    </section>
+
+    <section>
+      <h2>Saiba mais</h2>
+      <p>Visite o site oficial da Autoridade Nacional de Proteção de Dados (ANPD):  
+        <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">https://www.gov.br/anpd/pt-br</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Produzido por José Carlos Moura Ribeiro – Projeto Extensionista de Direito  
+    <br />Compartilhe para conscientizar mais pessoas!
+  </footer>
+
+  <button id="topBtn" title="Voltar ao topo">&#8679;</button>
+
+  <script>
+    const topBtn = document.getElementById('topBtn');
+    window.onscroll = function() {
+      if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+    topBtn.onclick = function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+</body>
+</html>
